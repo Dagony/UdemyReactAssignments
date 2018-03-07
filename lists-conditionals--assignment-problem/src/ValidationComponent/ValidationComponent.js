@@ -1,6 +1,4 @@
 import React from 'react';
-import CharComponent from '../CharComponent/CharComponent';
-// import './ValidationComponent.css';
 
 const validationComponent = (props) => {
 
@@ -15,7 +13,6 @@ const validationComponent = (props) => {
     return (
         <div className={"validationComponent"}>
             {message}
-            <CharComponent />
         </div>
 
     )
