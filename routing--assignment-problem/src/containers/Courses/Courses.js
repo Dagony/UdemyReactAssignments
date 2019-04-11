@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import './Courses.css';
+import {Link} from "react-router-dom";
+import Course from "../Course/Course";
 
 class Courses extends Component {
     state = {
@@ -9,7 +11,7 @@ class Courses extends Component {
             { id: 2, title: 'Vue - The Complete Guide' },
             { id: 3, title: 'PWA - The Complete Guide' }
         ]
-    }
+    };
 
     render () {
         return (
@@ -18,7 +20,9 @@ class Courses extends Component {
                 <section className="Courses">
                     {
                         this.state.courses.map( course => {
-                            return <article className="Course" key={course.id}>{course.title}</article>;
+                            return <article className="Course" key={course.id}>
+                                <Link to={'/course/'+course.id}>{course.title}</Link>
+                            </article>;
                         } )
                     }
                 </section>
