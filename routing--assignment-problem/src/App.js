@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
-import Course from "./containers/Course/Course";
 import {BrowserRouter, NavLink} from "react-router-dom";
-import {Route, Switch, Redirect} from "react-router";
+import {Redirect, Route, Switch} from "react-router";
 import UnknownPage from "./components/404Page";
 
 class App extends Component {
@@ -39,7 +38,6 @@ class App extends Component {
                     </nav>
 
                     <Switch>
-                        {/*<Route path={"/courses/:id"} component={Course} />*/}
                         <Route path={"/courses"} component={Courses} />
                         <Route path={"/users"} component={Users} />
                         <Redirect from={"/all-courses"} to={"/courses"} />

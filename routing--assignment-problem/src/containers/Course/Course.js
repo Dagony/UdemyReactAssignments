@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 class Course extends Component {
 
@@ -23,7 +23,7 @@ class Course extends Component {
         }
     }
 
-    render () {
+    render() {
         console.log(this.props);
         return (
             <div>
