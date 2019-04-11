@@ -40,6 +40,7 @@ class App extends Component {
                     <Switch>
                         <Route path={"/courses"} component={Courses} />
                         <Route path={"/users"} component={Users} />
+                        <Route path={"/course/:id/title/:title"} component={Course} />
                         <Route path={"/course/:id"} component={Course} />
                     </Switch>
 
